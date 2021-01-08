@@ -1,0 +1,161 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-image: url(images/fond.jpg);
+}
+footer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border:solid #F6CED8 1px;
+	margin-top: 5px;
+	padding-right: 7px;
+	padding-left: 7px;
+	background-color: white;
+	height: 155px;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 1.1em;
+	text-align: center;
+}
+#section
+{
+	border:solid #F6CED8 1px;
+	margin-top: 106px;
+	background-color: white;
+	height: 355px;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 1.1em;
+	text-align: justify;
+}
+.link
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+a
+{
+	text-decoration: none;
+	color: #FE2E64;
+	font-weight: bold;
+}
+div strong
+{
+	text-transform: uppercase;
+}
+
+nav 
+{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: black;
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#menu
+{
+	display:none;
+}
+nav .icon-menu {
+	
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-menu .line {
+	width: 30px;
+	height: 3px;
+	border: white 1px solid;
+	background-color: white;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	  footer
+  {
+    height: 180px;
+  }
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-menu {
+		display: block;
+	}
+	nav .icon-menu .line
+	{
+		display: block;
+	}
+	nav :checked ~ .icon-menu .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-menu .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-menu .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}

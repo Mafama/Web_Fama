@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="page7.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <title>Coiff'Pro-Panier</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <input id="menu" type="checkbox">
+    <div class="logo">Coiff'Pro</div>
+    <ul class="links">
+      <li><a href="page1.html">Qui sommes nous?</a></li>
+      <li><a href="page2.html">Détails techniques</a></li>
+      <li><a href="page3.html">Produits</a></li>
+      <li><a href="page4.html">Panier</a></li>
+    </ul>
+    <label for="menu" class="icon-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </label>
+  </nav>
+  </header>
+
+  <div class="section">
+    <div class="gauche">
+      
+      <p class="entete">Veuiller vérifier votre panier</p>
+      
+        <div id="un">
+          <p><img src="images/bonnet_mini.png" alt="bonnet" id="bonnet"></p>
+          <div id="deux">
+            <div>
+              <h2>Bonnet de soins</h2>
+              <p>Réf.36B95 <em>En stock</em><br/>
+              <span class="barre">11,50£ </span> 9,99£<br/>
+              </p>
+            </div>
+          <p><input type="number" name="quantite" id="quantite" value="3"></p>
+          <p><img src="images/poubelle.png" alt="poubelle"><input type="button" name="supprimer" value="Supprimer"/></p>
+          </div>
+        </div>
+  
+      <div id="trois">
+        <div><p>Votre commande vous rapportera 2 points de fidélité</p></div>
+        <div><p>Total TTC : 29,97£</p></div>
+      </div>
+    </div>
+    <div class="droite">
+      <p class="entete">Total à payer</p>
+      <div>
+        <p>Total TTC : 29,97£</p>
+        <label for="promo">Code promo:</label><br/><input type="text" name="promo" id="promo"/><input type="button" value="Valider" id="bouton" /><br/>
+        <label for="ville">Ville</label><br/>
+        <select name="ville" id="ville">
+          <option value="paris">Paris</option>
+          <option value="lyon">Lyon</option>
+          <option value="toulouse">Toulouse</option>
+          <option value="montpellier">Montpellier</option>
+          <option value="saint-etienne">Saint-Etienne</option>
+          <option value="montluçon">Montluçon</option>
+          <option value="marseille">Marseille</option>
+          <option value="nantes">Nantes</option>
+          <option value="Toulon">Toulon</option>
+        </select><br/>
+        <label for="livraison">Mode de livraison</label><br/>
+        <select name="livraison" id="livraison">
+          <option value="domicile">Domicile</option>
+          <option value="point_retrait">Point retrait</option>
+        </select>
+        <div class="total">
+        <div><p>Frais de port:</p></div>
+        <div><p>-</p></div>
+        </div>
+        <div class="total">
+        <div><p>Total :</p></div>
+        <div><p>17,99£</p></div>
+        </div>
+        <input type="button" name="commande" id="commande" value="passer commande"/>
+      </div>      
+    </div>    
+  </div>
+
+  <footer>      
+    <div>
+      <p><img src="images/livraison.png" alt="livraison_rapide"></p>
+      <p><strong>Commande avant 12h</strong><br/>
+      Expédiée le jour même</p>      
+    </div>
+    <div>
+      <p><img src="images/satisfait.png" alt="satisfait_rembourse"></p>
+      <p><strong>Satisfait(e)</strong><br/>
+      ou remboursé(e)</p>
+    </div>
+    <div>
+      <p><img src="images/offerte.png" alt="livraison_offerte"></p>
+      <p><strong>Livraison offerte</strong><br/>
+      dès 40£ d'achats</p>
+    </div>
+    <div>
+      <p><img src="images/paiement.png" alt="paiement_securise"></p>
+      <p><strong>Paiement sécurisé</strong><br/>
+      via carte bancaire</p>
+    </div>
+  </footer>
+
+</body>
+</html>
